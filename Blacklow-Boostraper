@@ -1,1 +1,11 @@
+local GameId = game.GameId
+local Pilfering_Pirates_GameId = 6104994594
 
+local Pilfering_Pirates_Script = "https://raw.githubusercontent.com/BlacklowTechnologies/Roblox-Scripts/refs/heads/main/Blacklow-Main/GamesScripts/Pilfering%20Pirates.txt"
+local Universal_Script = "https://raw.githubusercontent.com/BlacklowTechnologies/Roblox-Scripts/refs/heads/main/Blacklow-Main/Universal%20Script/Universal%20Script-pc-mob.txt"
+
+if GameId == Pilfering_Pirates_GameId then
+    loadstring(game:HttpGet(Pilfering_Pirates_Script))()
+else
+    loadstring(game:HttpGet(Universal_Script))()
+end
